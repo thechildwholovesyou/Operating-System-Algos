@@ -25,7 +25,7 @@ int main()
 {
     int n;
     //cout<<"Enter the number of processes :";
-    cin>>b;
+    cin>>n;
     float sum_tat=0, sum_wt=0, sum_rt=0;
     int length_cycle, total_idle_time=0;
     float cpu_utilization;
@@ -41,7 +41,7 @@ int main()
     {
         cin>>ps[i].bt;
     }
-    sort(ps,ps+,comparatorAT);
+    sort(ps,ps+n,comparatorAT);
 
     for(int i=0;i<n;i++)
     {
